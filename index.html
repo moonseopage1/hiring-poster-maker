@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="control-container">
+        <div class="controls">
+            <input type="file" id="imageUploader" accept="image/*">
+            <input type="text" id="jobTitleInput" placeholder="Enter Job Title">
+            <select id="clipDirection">
+                <option value="" disabled selected>Select Clip Direction</option>
+                <option value="bottom-left">Bottom Left → Right</option>
+                <option value="bottom-right">Bottom Right → Left</option>
+                <option value="top-left">Top Left → Right</option>
+                <option value="top-right">Top Right → Left</option>
+                <option value="center">Center</option>
+            </select>
+
+            <button id="generateBtn">Generate Poster</button>
+        </div>
+    </div>
+
+    <div class="poster-container" id="posterContainer">
+        <div><button id="downloadBtn" class="download-btn">Download</button></div>
+        <div id="uploadedImage" class="uploaded-image">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
