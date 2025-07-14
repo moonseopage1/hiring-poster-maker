@@ -11,7 +11,10 @@
 <body>
     <div class="control-container">
         <div class="controls">
-            <input type="file" id="imageUploader" accept="image/*" multiple>
+            <div>
+                <label style="font-size: 12px;" for="imageUploader">Upload Image (Recommended Size: 1080x1080)</label>
+                <input type="file" id="imageUploader" accept="image/*" multiple>
+            </div>
             <input type="text" id="jobTitleInput" placeholder="Enter Job Title">
             <select id="clipDirection">
                 <option value="" disabled selected>Select Clip Direction</option>
@@ -27,7 +30,7 @@
     </div>
 
     <div class="poster-container" id="posterContainer">
-        <div><button id="downloadBtn" class="download-btn">Share</button></div>
+        <!-- <div><button id="downloadBtn" class="download-btn">Share</button></div> -->
         <div id="uploadedImage" class="uploaded-image">
         </div>
     </div>
